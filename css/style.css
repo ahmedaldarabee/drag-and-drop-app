@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    
+    background-color: #928cff;
+    flex-direction: column;
+
+    gap: 40px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.box-data button {
+    text-transform: capitalize;
+    width: 100%;
+    padding: 5px;
+    transition: all 0.3s ease;
+
+    background-color: #928cff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.box-data button:hover{
+    background-color: #746ee1;
+}
+
+.inputs {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.inputs h3 {
+    font-size: 20px;
+}
+
+.inputs .box-data {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs .box-data input {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.drawing-part .container .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.drawing-part .container .list .box {
+    margin: 40px 60px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 200px;
+    transition: all 0.4s ease;
+}
+
+.drawing-part .container .list .box h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .drawing-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .drawing-part .container .inputs {
+        margin-top: 20px;
+    }
+
+    .drawing-part .container .list {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+.drawing-part .container .list .box .item {
+    background-color: #928cff;
+    margin: 4px ;
+    padding: 4px;
+    color: white;
+    text-transform: none;
+    cursor: move;
+}
