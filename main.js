@@ -63,6 +63,8 @@ function draggingTOItem() {
 
 button.onclick = holdDataDropped;
 
+// Be careful : input not button !
+
 input.onkeyup = function(event) {
     if (event.key === 'Enter' || event.keyCode === 13) {
         holdDataDropped();
